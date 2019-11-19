@@ -1,0 +1,17 @@
+server:
+  port: 8050
+  
+cloud:
+  aws:
+    stack:
+      auto: false
+    region:
+      static: ap-northeast-1
+      auto: false
+    credentials:
+      access-key: [AWS IAMのアクセスキー]
+      secret-key: [AWS IAMのシークレット]
+    end-point:
+        url: https://sqs.ap-northeast-1.amazonaws.com/194562965310/sqs-sample-que
+        polling-threads: 2
+        polling-rate: 1000
